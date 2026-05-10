@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary: #0d3b66;
+    --accent: #00b4d8;
+    --bg: #0a1a1f;
+    --text: #ffffff;
+    --dark: #0b1b3b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+/* NAVBAR */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    z-index: 999;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* LOGO CONTAINER */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* LOGO IMAGE */
+.logo img {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* LOGO TEXT */
+.logo-text h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.logo-text p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 25px;
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--accent);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.active::after {
+    width: 100%;
+}
+
+nav a:hover {
+    color: var(--accent);
+}

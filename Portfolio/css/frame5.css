@@ -1,0 +1,199 @@
+/* FRAME 5 */
+
+body{
+    margin: 0;
+    padding: 170px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('../Assets/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* MAIN WRAPPER */
+
+.contact-wrapper{
+    width: 96%;
+    margin: auto;
+}
+
+/* CONTAINER */
+
+.contact-container{
+    background: rgba(255,255,255,0.80);
+    border-radius: 35px 35px 0 0;
+    min-height: 72vh;
+    display: flex;
+    padding: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* LEFT SIDE */
+
+.social-section{
+    width: 40%;
+    color: #04164b;
+}
+
+.social-section h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.social-links a{
+    text-decoration: none;
+    color: #04164b;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-links i{
+    font-size: 2.2rem;
+}
+
+/* SOCIAL ICON COLORS */
+
+.fa-facebook{
+    color: #1877f2;
+}
+
+.fa-twitter{
+    color: #1da1f2;
+}
+
+.fa-tiktok{
+    color: black;
+}
+
+.fa-instagram{
+    color: #e1306c;
+}
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+/* DIVIDER */
+
+.vertical-line{
+    width: 3px;
+    background: #04164b;
+    margin: 0 35px;
+}
+
+/* FORM */
+
+.form-section{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-group label{
+    width: 100px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #04164b;
+}
+
+.input-group input{
+    flex: 1;
+    height: 42px;
+    border: 1px solid #888;
+    background: transparent;
+    padding: 0 10px;
+    font-size: 1rem;
+}
+
+.textarea-group{
+    align-items: flex-start;
+}
+
+.textarea-group textarea{
+    flex: 1;
+    height: 230px;
+    border: 1px solid #888;
+    background: transparent;
+    resize: none;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* BUTTON */
+
+button{
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 30px;
+    border: none;
+    background: green;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+    .contact-container{
+        flex-direction: column;
+        border-radius: 25px;
+    }
+
+    .social-section{
+        width: 100%;
+    }
+
+    .vertical-line{
+        width: 100%;
+        height: 3px;
+        margin: 30px 0;
+    }
+
+    .input-group{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label{
+        margin-bottom: 10px;
+    }
+
+    .input-group input,
+    .textarea-group textarea{
+        width: 100%;
+    }
+
+}
